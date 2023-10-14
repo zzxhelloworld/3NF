@@ -1026,7 +1026,7 @@ public class TPCHWorkloadExp {
 		List<Integer> second_loop_time = Arrays.asList(1,2,3,4,5,6,7);
 		
 		Map<String,String> query_sqls_map = new HashMap<String,String>();//query exp
-		String sql_path = "C:\\Users\\zzha969\\OneDrive - The University of Auckland\\Desktop\\PhD\\iCONF\\TPCH\\tpch-query-sql";
+		String sql_path = "";
 		get_query_sqls_map(sql_path,query_sqls_map);
 		List<String> query_names = new ArrayList<String>();
 		for(int i = 1;i <= 22;i ++) {
@@ -1034,12 +1034,12 @@ public class TPCHWorkloadExp {
 		}
 		
 		Map<String,List<String>> attr_type_map = get_attr_type_map();
-		String outputPathSchema = "C:\\Users\\zzha969\\OneDrive - The University of Auckland\\Desktop\\PhD\\iCONF\\Exp Results\\TPCH_schemata.txt";
-		String output = "C:\\Users\\zzha969\\OneDrive - The University of Auckland\\Desktop\\PhD\\iCONF\\Exp Results\\TPCH_results.csv";
+		String outputPathSchema = "TPCH_schemata.txt";
+		String output = "TPCH_results.csv";
 		Map<String,List<FD>> table_fd_map = new HashMap<>();
 		Map<String,List<Key>> table_key_map = new HashMap<>();
 		
-		String FDBasePath = "C:\\Users\\zzha969\\OneDrive - The University of Auckland\\Desktop\\PhD\\iCONF\\TPCH\\tpch-fds";
+		String FDBasePath = "TPCH\\tpch-fds";
 		File file = new File(FDBasePath);
 		for(File path : file.listFiles()) {
 			if(path.getName().endsWith("txt")) {
