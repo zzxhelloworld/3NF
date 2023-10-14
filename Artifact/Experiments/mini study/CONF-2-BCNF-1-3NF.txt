@@ -1,0 +1,55 @@
+atomic closure: 
+###########
+[B, C, D] -> [A]
+[A, B] -> [C]
+[B, C, D] -> [E]
+[E, C] -> [D]
+[E, D] -> [C]
+[B, C, E] -> [A]
+[B, D, E] -> [A]
+[A, B, D] -> [E]
+[A, B, E] -> [D]
+###########
+
+
+ 
+BCNF schemata as follows: 
+BCNF schema: 
+Schema: [B, D, E, A]
+Keys: 
+[B, E, A]
+[B, D, E]
+[A, B, D]
+**********
+
+
+BCNF schema: 
+Schema: [A, B, C]
+Keys: 
+[A, B]
+**********
+
+
+###################
+
+3NF schemata as follows: 
+3NF schema with mixed cover: 
+Schema: [B, C, D, E]
+FDs: 
+[E, C] -> [D]
+[D, E] -> [C]
+Keys: 
+[D, E, B]
+[B, C, D]
+[E, C, B]
+**********
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+3NF with fd cover version:
+3NF schema: 
+Schema: [B, C, D, E]
+FDs: 
+[E, C] -> [D]
+[B, C, D] -> [E]
+[E, D] -> [C]
+**********
