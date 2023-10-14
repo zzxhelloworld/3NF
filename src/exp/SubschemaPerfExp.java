@@ -209,12 +209,12 @@ public class SubschemaPerfExp {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		int round = 1;//experiment repeat times
+		int round = 10;//experiment repeat times
 		int sampleLimit = 10;//for each key/optimization target number,we sample subschemas for experiments with limited numbers
-		String output = "C:\\Users\\zzha969\\OneDrive - The University of Auckland\\Desktop\\PhD\\iCONF\\Exp Results\\";
+		String output = "";
 		List<Integer> insert_row_num_list = Arrays.asList(100,200,300);
 //		List<String> optimTargetList = Arrays.asList("FDN", "ASN");
-//		List<String> decompAlgList = Arrays.asList("iCONF-optimal","iCONF-optimal keyfd","iCONF-reduced minimal","iCONF-reduced minimal keyfd",
+//		List<String> decompAlgList = Arrays.asList("iCONF-reduced minimal","iCONF-reduced minimal keyfd",
 //				"CONF", "CONF-mix", "DecompAlg2", "DecompAlg2-mix", "DecompAlg3", "DecompAlg3-mix", "DecompAlg4", "DecompAlg4-mix");
 		List<String> optimTargetList = Arrays.asList("FDN");
 		List<String> decompAlgList = Arrays.asList("DecompAlg2");
