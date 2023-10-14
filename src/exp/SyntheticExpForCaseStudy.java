@@ -297,7 +297,7 @@ public class SyntheticExpForCaseStudy {
 //		List<Object> iCONF_decomp = SyntheticExpForCaseStudy.getDecompResult_iCONF_3NF_fdcover();
 //		List<Object> CONF_decomp = SyntheticExpForCaseStudy.getDecompResult_CONF_3NF_fdcover();
 		
-		String outputPath = "C:\\Users\\zzha969\\OneDrive - The University of Auckland\\Desktop\\PhD\\iCONF\\Exp Results\\case_study.txt";
+		String outputPath = "";
 		String tableName = "mini_study";
 		int repeat = 30;
 		int num = 100000000;//1m,10m,100m
