@@ -973,8 +973,7 @@ public class TPCHWorkloadExp {
 		Set<String> nonPrimeAttrs = new HashSet<>(R);
 		nonPrimeAttrs.removeAll(primeAttrs);
 		
-		//在所有fds中 找到lhs全是主属性，如果找不到指定数量的fd， 
-		//将一个非主属性任意添加到一个key，重复上述步骤，如果最后非主属性集合为空，仍然找不到，则返回当前schema
+		
 		List<FD> candFDs = new ArrayList<>();
 		for(FD fd : totalFDs) {
 			if(primeAttrs.containsAll(fd.getLeftHand())) {
