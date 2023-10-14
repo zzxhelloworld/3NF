@@ -13,7 +13,7 @@ This repository contains various artifacts, such as source code, experimental re
 # Experiments
 In line with our paper, our experiments are organized into four sections. For each of them, you can run different code/scripts:
 >1. Mini Study
->> In this experiment, we introduce a mini-study to show our initial research motivation. Using the same FDs as input, iCONF we currently proposed and CONF(SOTA algorithm) output two different decompositions that have been implemented in our code. To reproduce the mini-study experiment, you can set up some parameters and run the code at <kbd>src/exp/SyntheticExpForCaseStudy.java</kbd>.
+>> In this part, we do a mini-study to show our initial research motivation in the introduction. Using the same FDs as input, iCONF we currently proposed and CONF (SOTA algorithm) output two different decompositions. For each decomposition, we insert the same records on each subschema of the decomposition. The mini-study shows that the decomposition from iCONF saves much more time than that of CONF. To reproduce the mini-study experiment, you can set up some parameters and run the code at <kbd>src/exp/SyntheticExpForCaseStudy.java</kbd>.
 >2. Why do we parameterize normalization?
 >> In this experiment, We ran the entire TPC-H benchmark (scaling factor 0.1) with the 22 queries, 7 refresh and 3 insert (adding 1k, 2k, and 3k of records) operations after declaring 1 to 5 minimal keys as UNIQUE constraints and enforcing 1 to 5 non-key FDs by triggers on each table. Through the workload experiments, our TPC-H study emphasizes the need for reducing the tremendous overhead caused by non-key FDs during updates. To reproduce the experiment, you can run the code at <kbd>src/exp/TPCHWorkloadExp.java</kbd>.
 >3. How good are our algorithms?
