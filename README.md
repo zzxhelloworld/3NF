@@ -14,6 +14,8 @@ This repository contains various artifacts, such as source code, experimental re
 In line with our paper, our experiments are organized into four sections. For each of them, you can run different code/scripts:
 >1. Mini Study
 >> In this experiment, we introduce a mini-study to show our initial research motivation. Using the same FDs as input, iCONF we currently proposed and CONF(SOTA algorithm) output two different decompositions that have been implemented in our code. To reproduce the mini-study experiment, you can set up some parameters and run the code at <kbd>src/exp/SyntheticExpForCaseStudy.java</kbd>.
+>2. Why do we parameterize normalization?
+>> In this experiment, We ran the entire TPC-H benchmark (scaling factor 0.1) with the 22 queries, 7 refresh and 3 insert (adding 1k, 2k, and 3k of records) operations after declaring 1 to 5 minimal keys as UNIQUE constraints and enforcing 1 to 5 non-key FDs by triggers on each table. Through the workload experiments, our TPC-H study emphasizes the need for reducing the tremendous overhead caused by non-key FDs during updates. To reproduce the experiment, you can run the code at <kbd>src/exp/TPCHWorkloadExp.java</kbd>.
 >1. Number of Keys on Real-World Schemata
 >> In this experiment, we connected to [the relational data
 repository](https://relational.fit.cvut.cz) to check how many uniqueness constraints (primary key plus additional UNIQUE constraints) are i) specified or ii) valid on some public databases. Results are available for a variety of databases, including the numbers on each of the tables in each of the databases <kbd>Artifact/02 - Experiments/1 - Number of Keys on Real-World Schemata/</kbd>. The paper contains only a summary of them.
