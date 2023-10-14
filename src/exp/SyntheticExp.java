@@ -279,31 +279,12 @@ public class SyntheticExp {
 	}
 	
 	public static void main(String[] args) throws SQLException {
-		//p schema experiments
-//		int repeat = 5;
-//		int arm_rel_num = 1000;//Armstrong relation number
-//		List<Integer> insert_row_list = Arrays.asList(1000,2000,3000);
-//		List<Integer> p_list = Arrays.asList(1,3,5,7,9,11,13,15);
-//		String output = "C:\\Users\\zzha969\\Desktop\\PhD\\iCONF\\Exp Results\\pschema_results.csv";
-		
-		//varying FD numbers
-//		for(Integer p : p_list) {
-//			Schema3NF schema = SyntheticExp.getPSchema(p);//key number: p + 2, FD number: p + 3
-//			String tableName = "pSchema"+p;
-//			SyntheticExp.runExps(schema, p, output, tableName, repeat, arm_rel_num, insert_row_list);
-//		}
-		
-		//varying Key numbers and FD number
-//		int p = 5;
-//		String tableName = "pSchema"+p;
-//		Schema3NF schema = SyntheticExp.getPSchema(p);//key number: p + 2, FD number: p + 3
-//		SyntheticExp.runExpsOnVaryingKeysAndFDs(schema, p, output, tableName, repeat, arm_rel_num, insert_row_list);
 		
 		//Traffic schema experiments
 		int repeat = 5;
 		List<Integer> arm_rel_num_list = Arrays.asList(1000,10000,100000);//Armstrong relation number
 		List<Integer> insert_row_list = Arrays.asList(1000,2000,3000);
-		String output = "C:\\Users\\zzha969\\Desktop\\PhD\\iCONF\\Exp Results\\traffic_results.csv";
+		String output = "";
 		//varying Key numbers and FD number
 		Schema3NF schema = SyntheticExp.getTrafficSchema();
 		for(int arn : arm_rel_num_list) {
