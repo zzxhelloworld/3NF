@@ -1826,15 +1826,18 @@ public class Utils {
 			break;
 		case "reduced":
 			fdcover = Utils.compReducedCover(FDs);
+			fdcover = Utils.combineFDs(fdcover);
 			break;
 		case "canonical":
 			fdcover = Utils.compCanonicalCover(Utils.compReducedCover(FDs));
 			break;
 		case "minimal":
 			fdcover = Utils.compMinimalCover(Utils.compNonRedundantCover(FDs));
+			fdcover = Utils.combineFDs(fdcover);
 			break;
 		case "reduced minimal":
 			fdcover = Utils.compReducedCover(Utils.compMinimalCover(Utils.compNonRedundantCover(FDs)));
+			fdcover = Utils.combineFDs(fdcover);
 			break;
 		case "optimal":
 			List<FD> fd_set = Utils.splitFDs(FDs);
@@ -1847,8 +1850,9 @@ public class Utils {
 			fdcover = Utils.compOptimalCover(miniCover);
 			break;
 		}
-		return Utils.combineFDs(fdcover);
+		return fdcover;
 	}
+	
 	
 	/**
 	 * given an FD cover type, return an object list, including schema(index 0), Key set(index 1), FD set(index 2) and FD cover(index 3 if newVersion is true)
