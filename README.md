@@ -24,9 +24,15 @@ In line with our paper, our experiments are organized into four sections. For ea
 ## Installation
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/zzxhelloworld/iCONF.git
-   cd yourrepository
-   java -cp yourclasspath SubschemaPerfExp --param1 value1 --param2 value2
+2. Navigate to the project directory:
+   cd your_project_directory
+3. run separate code from the command line for experiments:
+   3.1 Mini Study
+   javac SyntheticExpForCaseStudy.java
+   java SyntheticExpForCaseStudy <output_path> <db_table_name>
+   3.2 
+
+   
 
