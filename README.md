@@ -21,10 +21,10 @@ In line with our paper, our experiments are organized into four sections. For ea
 >4. How much overhead do we save?
 >> Finally, we have illustrated how much update overhead our algorithms save. For that purpose, we insert 10k, 20k, and 30k of records into hepatitis, abalone, ncvoter, lineitem, and weather. These insertions are done for the projections of these records onto the output schemata of our decompositions, resulting from various variants of our algorithms: iConf-f>k (A1: minimizes the number of non-key FDs first, then maximizes the number of minimal keys when ties still exist), iConf-f<k (minimizes the number of non-key FDs first, then minimizes the number of minimal keys when ties still exist), iConf->kf (maximizes the number of minimal keys first, then minimizes the number of non-key FDs when ties still exist), iConf-f (A2: minimizes the number of non-key FDs), CONF, BC-Cover, and Synthesis. To reproduce the experiment, you can run the code at <kbd>src/exp/SubschemaPerfExp.java</kbd>.
 # How to run code from the command line
-## Clone the repository:
+## 1. Clone the repository:
    ```bash
    git clone https://github.com/zzxhelloworld/iCONF.git
-2. Navigate to the project directory:
+## Navigate to the project directory:
    ```bash
    cd your_project_directory
    
