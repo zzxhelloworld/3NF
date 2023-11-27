@@ -27,12 +27,15 @@ In line with our paper, our experiments are organized into four sections. For ea
    ```bash
    git clone https://github.com/zzxhelloworld/iCONF.git
 2. Navigate to the project directory:
+   ```bash
    cd your_project_directory
-3. run separate code from the command line for experiments:
+   
+4. run separate code from the command line for experiments:
    3.1 Mini Study
    ```bash
    javac SyntheticExpForCaseStudy.java
    java SyntheticExpForCaseStudy <output_path> <db_table_name>
+   
    3.2 
 
    
