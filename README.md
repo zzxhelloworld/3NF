@@ -50,7 +50,7 @@ In line with our paper, our experiments are organized into four sections. For ea
    ```bash
    javac SubschemaPerfExp.java
    java SubschemaPerfExp <experiment_repeat_num> <schema_sample_num> <experimental_results_output_path>
-      <decomposition_algs_separated_by_commas> <dataset_name> <experimental_results_output_directory>
+                         <decomposition_algs_separated_by_commas> <dataset_name> <experimental_results_output_directory>
    ```
 
    
