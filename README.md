@@ -39,7 +39,7 @@ In line with our paper, our experiments are organized into four sections. For ea
    3.2 Why do we parameterize normalization?
    ```bash
    javac TPCHWorkloadExp.java
-   java TPCHWorkloadExp <experiment_repeat_num> <TPCH_sql_path> <TPCH_schema_output_path> <experimental_results_output_path>
+   java TPCHWorkloadExp <experiment_repeat_num> <TPCH_sql_path> <TPCH_schema_output_path> <experimental_result_output_path>
    ```
    3.3 How good are our algorithms?
    ```bash
