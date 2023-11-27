@@ -34,7 +34,7 @@ In line with our paper, our experiments are organized into four sections. For ea
    3.1 Mini Study
    ```bash
    javac SyntheticExpForCaseStudy.java
-   java SyntheticExpForCaseStudy <output_path> <db_table_name>
+   java SyntheticExpForCaseStudy <output_path> <db_table_name> <experiment_repeat_num> <synthetic_dataset_num> <insert_num>
    ```
    3.2 Why do we parameterize normalization?
    ```bash
