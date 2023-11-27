@@ -36,8 +36,10 @@ In line with our paper, our experiments are organized into four sections. For ea
    ```bash
    javac SyntheticExpForCaseStudy.java
    java SyntheticExpForCaseStudy <output_path> <db_table_name>
-   
-   3.2 
+   3.2 Why do we parameterize normalization?
+   ```bash
+   javac TPCHWorkloadExp.java
+   java TPCHWorkloadExp <TPCH_sql_path> <TPCH_schema_output_path> <experimental_results_output_path>
 
    
 
